@@ -1,0 +1,21 @@
+body {
+    min-height: 100vh;
+}
+
+header {
+    width: 100%;
+}
+
+.active {
+    text-decoration: underline;
+}
+
+.p-3 {
+    background-color: $primary;
+}
+
+footer {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+}

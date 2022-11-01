@@ -1,0 +1,21 @@
+.welcome-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.myfriends-logo {
+    max-width: 500px;
+    width: 100%;
+}
+
+.row {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    border: solid $indigo;
+    border-radius: 20px;
+}

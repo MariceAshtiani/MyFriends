@@ -10789,22 +10789,6 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-body {
-  min-height: 100vh;
-}
-
-header {
-  width: 100%;
-}
-
-.active {
-  text-decoration: underline;
-}
-
-.p-3 {
-  background-color: #4a0386;
-}
-
 .welcome-content {
   display: flex;
   justify-content: center;
@@ -10825,12 +10809,6 @@ header {
   margin-right: 5%;
   border: solid #4a0386;
   border-radius: 20px;
-}
-
-footer {
-  width: 100%;
-  padding-left: 10px;
-  padding-right: 10px;
 }
 
 .header {
@@ -10930,6 +10908,28 @@ footer {
 .feed-heading {
   text-align: center;
   margin-top: 5%;
+}
+
+body {
+  min-height: 100vh;
+}
+
+header {
+  width: 100%;
+}
+
+.active {
+  text-decoration: underline;
+}
+
+.p-3 {
+  background-color: #4a0386;
+}
+
+footer {
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 /*# sourceMappingURL=styles.css.map */
