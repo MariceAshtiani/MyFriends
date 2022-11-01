@@ -6,8 +6,8 @@
 }
 
 .myfriends-logo {
-    max-width: 500px;
-    width: 100%;
+    max-width: 300px;
+    width: 90%;
 }
 
 .row {
@@ -18,4 +18,11 @@
     margin-right: 5%;
     border: solid $indigo;
     border-radius: 20px;
+}
+
+@media (max-width: 600px) {
+    .welcome-content{
+        display: block;
+        text-align: center;
+    }
 }

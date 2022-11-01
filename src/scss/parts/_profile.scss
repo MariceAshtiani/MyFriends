@@ -28,10 +28,11 @@
 }
 
 .profile-text {
-    position: relative;
-    margin-left: 20%;
-    top: 20px;
+    max-width: map-get($container-max-widths, sm);
+    width:100%;
+    margin: auto;
     margin-bottom: 100px;
+    padding-top: 20px;
 }
 
 .sidebar {
@@ -45,8 +46,8 @@
     text-align: center;
     position: relative;
     margin: 0 auto;
-    max-width: map-get($container-max-widths, md);
-    width: 50%;
+    max-width: map-get($container-max-widths, lg);
+    width: 90%;
     border: solid $primary;
     padding: 10px;
     margin-top: 10%;
@@ -66,8 +67,8 @@
     margin-top: 15px;
     position: relative;
     margin: 0 auto;
-    max-width: map-get($container-max-widths, md);
-    width: 50%;
+    max-width: map-get($container-max-widths, lg);
+    width: 90%;
 }
 
 .card-body {
@@ -78,6 +79,7 @@
 
 .meme-image {
     max-width: map-get($container-max-widths, sm);
+    max-width: 100%;
 }
 
 .post-profile-image {
