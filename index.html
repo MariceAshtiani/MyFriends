@@ -8,25 +8,33 @@
     <link rel="stylesheet" href="/dist/css/styles.css">
 </head>
 <body>
-    <header class="p-3 ">
-        <div class="container">
-          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-            <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
-              <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
-            </a>
-    
-            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-              <li><a href="feed.html" class="nav-link px-2 text-white">Home</a></li>
-              <li><a href="profile.html" class="nav-link px-2 text-white">Profile</a></li>
-              <li><a href="index.html" class="nav-link px-2 text-white active">Log in</a></li>
-            </ul>
-    
-            <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
-              <input type="search" class="form-control form-control-dark " placeholder="Search..." aria-label="Search">
-            </form>
-          </div>
+  <header class="p-3 ">
+    <nav class="navbar navbar-expand-lg navbar-dark" aria-label="Fifth navbar example">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">MyFriends</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse" id="navbarsExample05">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="feed.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="profile.html">Profile</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Login</a>
+            </li>
+          </ul>
+          <form role="search">
+            <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+          </form>
         </div>
-      </header>
+      </div>
+    </nav>
+  </header>
       <main>
         <div class="welcome-content">
             <h1 class="fw-bold display-3">Welcome to</h1>
