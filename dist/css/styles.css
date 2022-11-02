@@ -10854,7 +10854,7 @@ textarea.form-control-lg {
   max-width: 720px;
   width: 90%;
   margin: 0 auto;
-  padding: 0;
+  margin-top: 10px;
 }
 
 .profiles img {
@@ -10862,14 +10862,22 @@ textarea.form-control-lg {
   width: 100%;
   border: solid #4a0386;
   border-radius: 50rem;
-  margin: 5px;
+  margin: 10px;
+}
+
+.profiles {
+  margin: 0 auto;
+}
+
+.profile-album {
+  margin: 0 auto;
 }
 
 .profile-album img {
   max-width: 100px;
   width: 100%;
   border: solid #4a0386;
-  margin: 5px;
+  margin: 10px;
 }
 
 .post-meme img {
