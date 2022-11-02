@@ -10872,6 +10872,13 @@ textarea.form-control-lg {
   margin: 5px;
 }
 
+.post-meme img {
+  max-width: 720px;
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 10px;
+}
+
 .feed-heading {
   text-align: center;
   margin-top: 5%;

@@ -56,3 +56,10 @@
     border: solid $border-color;
     margin:5px;
 }
+
+.post-meme img{
+    max-width: map-get($container-max-widths, md);
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
