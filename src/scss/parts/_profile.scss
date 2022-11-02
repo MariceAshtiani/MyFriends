@@ -4,11 +4,6 @@
     justify-content: center;
 }
 
-.profile-info h1{
-    text-align: center;
-    padding: 10px;
-}
-
 .header-image {
     max-width: map-get($container-max-widths, lg);
     width:100%;
@@ -28,8 +23,15 @@
 }
 
 .card {
+    
+    max-width: map-get($container-max-widths, md);
+    width: 100%;
     margin: 0 auto;
     margin-bottom: 20px;
+}
+
+.profile-elements {
+    margin: 0 auto;
 }
 
 .profiles img{

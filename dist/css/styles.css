@@ -10819,11 +10819,6 @@ textarea.form-control-lg {
   justify-content: center;
 }
 
-.profile-info h1, .profile-info .h1 {
-  text-align: center;
-  padding: 10px;
-}
-
 .header-image {
   max-width: 960px;
   width: 100%;
@@ -10842,8 +10837,14 @@ textarea.form-control-lg {
 }
 
 .card {
+  max-width: 720px;
+  width: 100%;
   margin: 0 auto;
   margin-bottom: 20px;
+}
+
+.profile-elements {
+  margin: 0 auto;
 }
 
 .profiles img {
