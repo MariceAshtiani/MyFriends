@@ -16,30 +16,20 @@
     position: relative;
 }
 
+
 .profile-picture {
     max-width: map-get($container-max-widths, xxsm);
     width: 100%;
     border: solid $border-color;
-    border-radius: $border-radius-pill;
     position: relative;
-    float: right;
-    margin-right: 20%;
     top: -60px;
-}
-
-.profile-text {
-    max-width: map-get($container-max-widths, sm);
-    width:100%;
-    margin: auto;
-    margin-bottom: 100px;
-    padding-top: 20px;
+    right: -50%;
+    transform: translateX(-50%);
 }
 
 .card {
-    max-width: map-get($container-max-widths, md);
-    width:90%;
     margin: 0 auto;
-    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 .profiles img{
@@ -70,6 +60,11 @@
     width: 100%;
     margin: 0 auto;
     padding-bottom: 10px;
+}
+
+.profile-buttons {
+    display: flex;
+    justify-content: space-between;
 }
 
 .icons a{

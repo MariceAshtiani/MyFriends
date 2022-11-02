@@ -10835,26 +10835,15 @@ textarea.form-control-lg {
   max-width: 200px;
   width: 100%;
   border: solid #4a0386;
-  border-radius: 50rem;
   position: relative;
-  float: right;
-  margin-right: 20%;
   top: -60px;
-}
-
-.profile-text {
-  max-width: 540px;
-  width: 100%;
-  margin: auto;
-  margin-bottom: 100px;
-  padding-top: 20px;
+  right: -50%;
+  transform: translateX(-50%);
 }
 
 .card {
-  max-width: 720px;
-  width: 90%;
   margin: 0 auto;
-  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 .profiles img {
@@ -10885,6 +10874,11 @@ textarea.form-control-lg {
   width: 100%;
   margin: 0 auto;
   padding-bottom: 10px;
+}
+
+.profile-buttons {
+  display: flex;
+  justify-content: space-between;
 }
 
 .icons a {
