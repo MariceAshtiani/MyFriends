@@ -10851,7 +10851,10 @@ textarea.form-control-lg {
 }
 
 .card {
+  max-width: 720px;
   width: 90%;
+  margin: 0 auto;
+  padding: 0;
 }
 
 .profiles img {

@@ -36,7 +36,10 @@
 }
 
 .card {
+    max-width: map-get($container-max-widths, md);
     width:90%;
+    margin: 0 auto;
+    padding: 0;
 }
 
 .profiles img{
