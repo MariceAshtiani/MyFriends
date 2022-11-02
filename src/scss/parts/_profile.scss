@@ -35,61 +35,21 @@
     padding-top: 20px;
 }
 
-.sidebar {
-    width: 230px;
-    max-width: 100%;
-    margin-top: 10%;
-    position: relative;
-    float:left;
-}
-.new-post-container {
-    text-align: center;
-    position: relative;
-    margin: 0 auto;
-    max-width: map-get($container-max-widths, lg);
-    width: 90%;
-    border: solid $primary;
-    padding: 10px;
-    margin-top: 10%;
+.card {
+    width:90%;
 }
 
-.text-area{
-    width: 700px;
-    max-width: 100%;
-}
-
-.icons{
-    cursor: pointer;
-    padding: 10px;
-}
-
-.old-post {
-    margin-top: 15px;
-    position: relative;
-    margin: 0 auto;
-    max-width: map-get($container-max-widths, lg);
-    width: 90%;
-}
-
-.card-body {
-    margin-top: 20px;
-    border: solid $primary;
-    padding: 10px;
-}
-
-.meme-image {
-    max-width: map-get($container-max-widths, sm);
-    max-width: 100%;
-}
-
-.post-profile-image {
+.profiles img{
     max-width: map-get($container-max-widths, xxxsm);
     width: 100%;
     border: solid $border-color;
     border-radius: $border-radius-pill;
+    margin: 5px;
 }
 
-.publisher-profile{
-    display: flex;
-    align-items: baseline;
+.profile-album img{
+    max-width: map-get($container-max-widths, xxxsm);
+    width: 100%;
+    border: solid $border-color;
+    margin:5px;
 }

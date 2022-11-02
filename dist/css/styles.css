@@ -10801,12 +10801,9 @@ textarea.form-control-lg {
   width: 90%;
 }
 
-.row {
-  margin-top: 5%;
-  margin-bottom: 5%;
+.welcome-card {
+  margin: 5%;
   width: 90%;
-  margin-left: 5%;
-  margin-right: 5%;
   border: solid #4a0386;
   border-radius: 20px;
 }
@@ -10853,64 +10850,23 @@ textarea.form-control-lg {
   padding-top: 20px;
 }
 
-.sidebar {
-  width: 230px;
-  max-width: 100%;
-  margin-top: 10%;
-  position: relative;
-  float: left;
-}
-
-.new-post-container {
-  text-align: center;
-  position: relative;
-  margin: 0 auto;
-  max-width: 960px;
-  width: 90%;
-  border: solid #4a0386;
-  padding: 10px;
-  margin-top: 10%;
-}
-
-.text-area {
-  width: 700px;
-  max-width: 100%;
-}
-
-.icons {
-  cursor: pointer;
-  padding: 10px;
-}
-
-.old-post {
-  margin-top: 15px;
-  position: relative;
-  margin: 0 auto;
-  max-width: 960px;
+.card {
   width: 90%;
 }
 
-.card-body {
-  margin-top: 20px;
-  border: solid #4a0386;
-  padding: 10px;
-}
-
-.meme-image {
-  max-width: 540px;
-  max-width: 100%;
-}
-
-.post-profile-image {
+.profiles img {
   max-width: 100px;
   width: 100%;
   border: solid #4a0386;
   border-radius: 50rem;
+  margin: 5px;
 }
 
-.publisher-profile {
-  display: flex;
-  align-items: baseline;
+.profile-album img {
+  max-width: 100px;
+  width: 100%;
+  border: solid #4a0386;
+  margin: 5px;
 }
 
 .feed-heading {
