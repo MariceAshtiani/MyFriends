@@ -39,7 +39,7 @@
     max-width: map-get($container-max-widths, md);
     width:90%;
     margin: 0 auto;
-    padding: 0;
+    margin-top: 10px;
 }
 
 .profiles img{
@@ -47,14 +47,22 @@
     width: 100%;
     border: solid $border-color;
     border-radius: $border-radius-pill;
-    margin: 5px;
+    margin: 10px;
+}
+
+.profiles {
+    margin: 0 auto;
+}
+
+.profile-album{
+    margin: 0 auto;
 }
 
 .profile-album img{
     max-width: map-get($container-max-widths, xxxsm);
     width: 100%;
     border: solid $border-color;
-    margin:5px;
+    margin: 10px;
 }
 
 .post-meme img{
@@ -62,4 +70,8 @@
     width: 100%;
     margin: 0 auto;
     padding-bottom: 10px;
+}
+
+.icons a{
+    text-decoration: none;
 }
