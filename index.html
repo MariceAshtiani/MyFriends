@@ -47,13 +47,13 @@
           <h3>Stop missing out! Sign in now!</h3>
         </div>
         <div class="col-md-10 mx-auto col-lg-5">
-          <form action=/profile.html class="p-4 p-md-5 border rounded-3 bg-light">
+          <form action="/profile.html" method="GET" class="p-4 p-md-5 border rounded-3 bg-light">
             <div class="form-floating mb-3">
-              <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+              <input type="email" class="form-control" id="floatingInput" required placeholder="name@example.com">
               <label for="floatingInput">Email address</label>
             </div>
             <div class="form-floating mb-3">
-              <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+              <input type="password" class="form-control" id="floatingPassword" placeholder="Password" minLength="5" maxLength="25" required>
               <label for="floatingPassword">Password</label>
             </div>
             <div class="checkbox mb-3">
