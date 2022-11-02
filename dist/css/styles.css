@@ -10879,11 +10879,6 @@ textarea.form-control-lg {
   padding-bottom: 10px;
 }
 
-.feed-heading {
-  text-align: center;
-  margin-top: 5%;
-}
-
 body {
   min-height: 100vh;
   font-family: "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -10891,10 +10886,6 @@ body {
 
 header {
   width: 100%;
-}
-
-.active {
-  text-decoration: underline;
 }
 
 .p-3 {

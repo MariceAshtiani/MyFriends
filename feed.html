@@ -37,186 +37,379 @@
     </nav>
   </header>
       <main>
-        <h1 class="feed-heading fw-bold">Your feed</h1>
-        <div class="new-post-container">
-          <h3>New post</h3>
-          <form class="new-post">
-            <textarea class="text-area" rows="4" placeholder="Type here"></textarea>
-            <div class="icons">
-              <i class="fa-regular fa-image"></i>
-              <i class="fa-regular fa-video"></i>
-              <i class="fa-regular fa-link"></i>
+        <h1 class="feed-heading fw-bold text-center">Your feed</h1>
+
+        <!--New post-->
+        <div class="container">
+          <div class="row">
+              <div class="col-lg-12 mt-5">
+                  <div class="card border-primary">
+                    <div class="card-body mb-4">
+                      <div class="d-flex flex-start w-100">
+                        <img class="rounded-circle me-3"
+                          src="images/profile-picture.jpg"  alt="profile-picture" width="80"
+                          height="80" />
+                        <div class="w-100">
+                          <h4>Create a new post!</h4>
+                          <div class="form-outline">
+                            <textarea class="form-control" id="textArea" rows="4" placeholder="Start typing here"></textarea>
+                          </div>
+                          <div class="float-end mt-2 pt-1">
+                            <button type="button" class="btn btn-primary">Publish</button>
+                            <button type="button" class="btn btn-dark">Cancel</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+
+              <!--Friends posts-->
+              <div class="col-lg-12 mt-3">
+                <div class="card border-primary">
+                  <div class="card-body mb-4">
+                    <div class="d-flex flex-start w-100">
+                      <a href="profile.html"> <img class="rounded-circle me-3"
+                        src="images/profile-picture.jpg" alt="profile-image" width="80"
+                        height="80" /> 
+                      <div>
+                        <h5 class="fw-bold mb-1">Pumpkin Munchkin</h5></a>
+                        <p class="text-muted small mb-0">Last updated 2 mins ago</p>
+                      </div>
+                    </div>
+                    <p class="mt-3 mb-4 pb-2">Just made a pumpkin pie from my carved seeds! yummy!</p>
+                    <div class="small d-flex justify-content-start">
+                      <a href="#" class="d-flex align-items-center me-3">
+                        <i class="far fa-thumbs-up me-2"></i>
+                        <p class="mb-0">Like</p>
+                      </a>
+                      <a href="#" class="d-flex align-items-center me-3">
+                        <i class="far fa-comment-dots me-2"></i>
+                        <p class="mb-0">Comment</p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
             </div>
-            <button type="submit" class="btn btn-primary btn-md">Post</button>
-            <button class="btn btn-primary btn-md">Delete</button>
-          </form>
+
+            <div class="col-lg-12 mt-3">
+              <div class="card border-primary">
+                <div class="card-body mb-4">
+                  <div class="d-flex flex-start w-100">
+                    <a href="profile.html"> <img class="rounded-circle me-3"
+                      src="images/profiles/lisa (1).jpg" alt="profile-image" width="80"
+                      height="80" /> 
+                    <div>
+                      <h5 class="fw-bold mb-1">Lisa Mona</h5></a>
+                      <p class="text-muted small mb-0">Last updated 10 mins ago</p>
+                    </div>
+                  </div>
+                  <p class="mt-3 mb-4 pb-2">This feels like me today, yep!</p>
+                  <div class="post-meme">
+                    <img src="images/memes/meme1.jpg" alt="funny developer-meme">
+                  </div>
+                  <div class="small d-flex justify-content-start">
+                    <a href="#" class="d-flex align-items-center me-3">
+                      <i class="far fa-thumbs-up me-2"></i>
+                      <p class="mb-0">Like</p>
+                    </a>
+                    <a href="#" class="d-flex align-items-center me-3">
+                      <i class="far fa-comment-dots me-2"></i>
+                      <p class="mb-0">Comment</p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+          </div>
+
+          <div class="col-lg-12 mt-3">
+            <div class="card border-primary">
+              <div class="card-body mb-4">
+                <div class="d-flex flex-start w-100">
+                  <a href="profile.html"> <img class="rounded-circle me-3"
+                    src="images/profiles/Some.png" alt="profile-image" width="80"
+                    height="80" /> 
+                  <div>
+                    <h5 class="fw-bold mb-1">Some Name</h5></a>
+                    <p class="text-muted small mb-0">Last updated 50 mins ago</p>
+                  </div>
+                </div>
+                <p class="mt-3 mb-4 pb-2">Ha Ha... Happens to me all the time</p>
+                <div class="post-meme">
+                  <img src="images/memes/meme2.jpg" alt="funny developer-meme">
+                </div>
+                <div class="small d-flex justify-content-start">
+                  <a href="#" class="d-flex align-items-center me-3">
+                    <i class="far fa-thumbs-up me-2"></i>
+                    <p class="mb-0">Like</p>
+                  </a>
+                  <a href="#" class="d-flex align-items-center me-3">
+                    <i class="far fa-comment-dots me-2"></i>
+                    <p class="mb-0">Comment</p>
+                  </a>
+                </div>
+              </div>
+            </div>
         </div>
-        <div class="old-post">
-          <div class="card-body">
-            <div class="publisher-profile">
-              <img src="images/profile-picture.jpg" alt="Profile picture of me" class="post-profile-image">
-              <h5 class="card-title">Pumpkin Munchkin</h5>
-              <hr>
+
+        <div class="col-lg-12 mt-3">
+          <div class="card border-primary">
+            <div class="card-body mb-4">
+              <div class="d-flex flex-start w-100">
+                <a href="profile.html"> <img class="rounded-circle me-3"
+                  src="images/profile-picture.jpg" alt="profile-image" width="80"
+                  height="80" /> 
+                <div>
+                  <h5 class="fw-bold mb-1">Pumpkin Munchkin</h5></a>
+                  <p class="text-muted small mb-0">Last updated 3 hours ago</p>
+                </div>
+              </div>
+              <p class="mt-3 mb-4 pb-2">That is pretty accurate when trying to learn bootstrap!</p>
+              <div class="post-meme">
+                <img src="images/memes/meme6.jpg" alt="funny developer-meme">
+              </div>
+              <div class="small d-flex justify-content-start">
+                <a href="#" class="d-flex align-items-center me-3">
+                  <i class="far fa-thumbs-up me-2"></i>
+                  <p class="mb-0">Like</p>
+                </a>
+                <a href="#" class="d-flex align-items-center me-3">
+                  <i class="far fa-comment-dots me-2"></i>
+                  <p class="mb-0">Comment</p>
+                </a>
+              </div>
             </div>
-            <p class="card-text">Starting to get a little dry, it's been only 2 days since i was carved...</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-            <hr>
-            Likes Comments
           </div>
-          <div class="card-body">
-            <div class="publisher-profile">
-              <img src="images/profiles/Blake.jpg" alt="Profile picture of Blake" class="post-profile-image">
-              <h5 class="card-title">Blake Lively</h5>
-              <hr>
+      </div>
+
+      <div class="col-lg-12 mt-3">
+        <div class="card border-primary">
+          <div class="card-body mb-4">
+            <div class="d-flex flex-start w-100">
+              <a href="profile.html"> <img class="rounded-circle me-3"
+                src="images/profiles/Zelda.jpg" alt="profile-image" width="80"
+                height="80" /> 
+              <div>
+                <h5 class="fw-bold mb-1">Zelda Epona</h5></a>
+                <p class="text-muted small mb-0">Last updated 6 hours ago</p>
+              </div>
             </div>
-              <p class="card-text">Waking up before noon should be considered a crime!</p>
-              <p class="card-text"><small class="text-muted">Last updated 20 mins ago</small></p>
-              <hr>
-              Likes Comments
-          </div>
-          <div class="card-body">
-            <div class="publisher-profile">
-              <img src="images/profiles/Johnny.png" alt="Profile picture of Johnny" class="post-profile-image">
-              <h5 class="card-title">Johnny Depp</h5>
-              <hr>
+            <p class="mt-3 mb-4 pb-2">Developer (noun) = a machine that makes Red Bull into code</p>
+            <div class="small d-flex justify-content-start">
+              <a href="#" class="d-flex align-items-center me-3">
+                <i class="far fa-thumbs-up me-2"></i>
+                <p class="mb-0">Like</p>
+              </a>
+              <a href="#" class="d-flex align-items-center me-3">
+                <i class="far fa-comment-dots me-2"></i>
+                <p class="mb-0">Comment</p>
+              </a>
             </div>
-            <p class="card-text">Amber Heard can suck it, I won again! Going back to Sleepy Hollow</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 hours ago</small></p>
-            <hr>
-            Likes Comments
-          </div>
-          <div class="card-body">
-            <div class="publisher-profile">
-              <img src="images/profiles/lisa (1).jpg" alt="Profile picture of Lisa" class="post-profile-image">
-              <h5 class="card-title">Lisa Mona</h5>
-              <hr>
-            </div>
-            <p class="card-text">One, two, Freddy's coming for you</p>
-            <p class="card-text">Three, four, better lock your door</p>
-            <p class="card-text">Five, six, grab your crucifix</p>
-            <p class="card-text"> Seven, eight, gonna stay up late</p>
-            <p class="card-text"> Nine, ten, never sleep again</p>
-            <p class="card-text"><small class="text-muted">Last updated 1 day ago</small></p>
-            <hr>
-            Likes Comments
-          </div>
-          <div class="card-body">
-            <div class="publisher-profile">
-              <img src="images/profiles/tim.jpg" alt="Profile picture of Tim" class="post-profile-image">
-              <h5 class="card-title">Tim Burton</h5>
-              <hr>
-            </div>
-              <p class="card-text">Happy Carving day, Pumpkin! Make something spoooooky!</p>
-              <p class="card-text"><small class="text-muted">Last updated 1 day ago</small></p>
-              <hr>
-              Likes Comments
-          </div>
-          <div class="card-body">
-            <div class="publisher-profile">
-              <img src="images/profiles/Nina.png" alt="Profile picture of Nina" class="post-profile-image">
-              <h5 class="card-title">Nina Nova</h5>
-              <hr>
-            </div>
-            <p class="card-text">Hee Hee, This is me when my teachers are trying to explain how to write my code properly!</p>
-            <img src="images/memes/meme6.jpg" alt="funny meme made to be about code" class="meme-image">
-            <p class="card-text"><small class="text-muted">Last updated 2 days ago</small></p>
-            <hr>
-            Likes Comments
-          </div>
-          <div class="card-body">
-            <div class="publisher-profile">
-              <img src="images/profiles/Robert.jpg" alt="Profile picture of Robert" class="post-profile-image">
-              <h5 class="card-title">Robert Robinson</h5>
-              <hr>
-            </div>
-            <p class="card-text">I am soon to give up beloved people on MyFriends!</p>
-            <img src="images/memes/meme2.jpg" alt="funny meme about coding and errors" class="meme-image">
-            <p class="card-text"><small class="text-muted">Last updated 3 days ago</small></p>
-            <hr>
-            Likes Comments
-          </div>
-          <div class="card-body">
-            <div class="publisher-profile">
-              <img src="images/profile-picture.jpg" alt="Profile picture of me" class="post-profile-image">
-              <h5 class="card-title">Pumpkin Munchkin</h5>
-              <hr>
-            </div>
-            <p class="card-text">Wow This is so smart!</p>
-            <img src="images/memes/meme5.jpg" alt="funny meme about bagels" class="meme-image">
-            <p class="card-text"><small class="text-muted">Last updated 4 days ago</small></p>
-            <hr>
-            Likes Comments
-          </div>
-          <div class="card-body">
-            <div class="publisher-profile">
-              <img src="images/profiles/Some.png" alt="Profile picture of Some" class="post-profile-image">
-              <h5 class="card-title">Some Name</h5>
-              <hr>
-            </div>
-            <p class="card-text">Programmer (noun) - a machine that makes Red Bull into code.</p>
-            <p class="card-text"><small class="text-muted">Last updated 6 days ago</small></p>
-            <hr>
-            Likes Comments
-          </div>
-          <div class="card-body">
-            <div class="publisher-profile">
-              <img src="images/profiles/Van.png" alt="Profile picture of Van Gogh" class="post-profile-image">
-              <h5 class="card-title">Van Gogh</h5>
-              <hr>
-            </div>
-            <p class="card-text">Hello, Pumpkin! I hope you are looking forward to carving yourself! I am hoping you have some time to carve me too! I would really like to be carved out like "The Scream" painting!</p>
-            <p class="card-text"><small class="text-muted">Last updated 1 week ago</small></p>
-            <hr>
-            Likes Comments
-          </div>
-          <div class="card-body">
-            <div class="publisher-profile">
-              <img src="images/profiles/Zelda.jpg" alt="Profile picture of Zelda" class="post-profile-image">
-              <h5 class="card-title">Zelda Epona</h5>
-              <hr>
-            </div>
-            <p class="card-text">It's my birthday soon!  Hip Hip Array!  hee hee.</p>
-            <p class="card-text"><small class="text-muted">Last updated 1 week ago</small></p>
-            <hr>
-            Likes Comments
-          </div>
-          <div class="card-body">
-            <div class="publisher-profile">
-              <img src="images/profiles/Nina.png" alt="Profile picture of Nina" class="post-profile-image">
-              <h5 class="card-title">Nina Nova</h5>
-              <hr>
-            </div>
-            <p class="card-text">This is much harder than i thought it would be..</p>
-            <img src="images/memes/meme1.jpg" alt="funny meme about code" class="meme-image">
-            <p class="card-text"><small class="text-muted">Last updated 2 weeks ago</small></p>
-            <hr>
-            Likes Comments
-          </div>
-          <div class="card-body">
-            <div class="publisher-profile">
-              <img src="images/profile-picture.jpg" alt="Profile picture of Pumpkin" class="post-profile-image">
-              <h5 class="card-title">Pumpkin Munchkin</h5>
-              <hr>
-            </div>
-            <p class="card-text">I've had so many Red Bulls today i think i can hear colors</p>
-            <img src="images/memes/meme3.jpg" alt="funny meme about developers" class="meme-image">
-            <p class="card-text"><small class="text-muted">Last updated 2 weeks ago</small></p>
-            <hr>
-            Likes Comments
-          </div>
-          <div class="card-body">
-            <div class="publisher-profile">
-              <img src="images/profiles/Some.png" alt="Profile picture of Some" class="post-profile-image">
-              <h5 class="card-title">Some Name</h5>
-              <hr>
-            </div>
-            <p class="card-text">I can't do this guys..</p>
-            <img src="images/memes/meme4.jpg" alt="funny meme about developing" class="meme-image">
-            <p class="card-text"><small class="text-muted">Last updated 3 weeks ago</small></p>
-            <hr>
-            Likes Comments
           </div>
         </div>
+    </div>
+
+    <div class="col-lg-12 mt-3">
+      <div class="card border-primary">
+        <div class="card-body mb-4">
+          <div class="d-flex flex-start w-100">
+            <a href="profile.html"> <img class="rounded-circle me-3"
+              src="images/profiles/Johnny.png" alt="profile-image" width="80"
+              height="80" /> 
+            <div>
+              <h5 class="fw-bold mb-1">Johnny Depp</h5></a>
+              <p class="text-muted small mb-0">Last updated 7 hours ago</p>
+            </div>
+          </div>
+          <p class="mt-3 mb-4 pb-2">Amber Heard can suck it! Don't shame me for my sciccorhands!</p>
+          <div class="small d-flex justify-content-start">
+            <a href="#" class="d-flex align-items-center me-3">
+              <i class="far fa-thumbs-up me-2"></i>
+              <p class="mb-0">Like</p>
+            </a>
+            <a href="#" class="d-flex align-items-center me-3">
+              <i class="far fa-comment-dots me-2"></i>
+              <p class="mb-0">Comment</p>
+            </a>
+          </div>
+        </div>
+      </div>
+  </div>
+
+  <div class="col-lg-12 mt-3">
+    <div class="card border-primary">
+      <div class="card-body mb-4">
+        <div class="d-flex flex-start w-100">
+          <a href="profile.html"> <img class="rounded-circle me-3"
+            src="images/profiles/Nina.png" alt="profile-image" width="80"
+            height="80" /> 
+          <div>
+            <h5 class="fw-bold mb-1">Nina Nova</h5></a>
+            <p class="text-muted small mb-0">Last updated 1 day ago</p>
+          </div>
+        </div>
+        <p class="mt-3 mb-4 pb-2">One, two, Freddy's coming for you</p>
+          <p class="mt-3 mb-4 pb-2">Three, four, better lock your door</p>
+          <p class="mt-3 mb-4 pb-2">Five, six, grab your crucifix</p>
+          <p class="mt-3 mb-4 pb-2"> Seven, eight, gonna stay up late</p>
+          <p class="mt-3 mb-4 pb-2"> Nine, ten, never sleep again</p></p>
+        <div class="small d-flex justify-content-start">
+          <a href="#" class="d-flex align-items-center me-3">
+            <i class="far fa-thumbs-up me-2"></i>
+            <p class="mb-0">Like</p>
+          </a>
+          <a href="#" class="d-flex align-items-center me-3">
+            <i class="far fa-comment-dots me-2"></i>
+            <p class="mb-0">Comment</p>
+          </a>
+        </div>
+      </div>
+    </div>
+</div>
+
+<div class="col-lg-12 mt-3">
+  <div class="card border-primary">
+    <div class="card-body mb-4">
+      <div class="d-flex flex-start w-100">
+        <a href="profile.html"> <img class="rounded-circle me-3"
+          src="images/profiles/Blake.jpg" alt="profile-image" width="80"
+          height="80" /> 
+        <div>
+          <h5 class="fw-bold mb-1"></h5>Blake Black</a>
+          <p class="text-muted small mb-0">Last updated 1 day ago</p>
+        </div>
+      </div>
+      <p class="mt-3 mb-4 pb-2">I've had so many Red Bulls today i think i can hear colors!</p>
+      <div class="post-meme">
+        <img src="images/memes/meme3.jpg" alt="funny developer-meme">
+      </div>
+      <div class="small d-flex justify-content-start">
+        <a href="#" class="d-flex align-items-center me-3">
+          <i class="far fa-thumbs-up me-2"></i>
+          <p class="mb-0">Like</p>
+        </a>
+        <a href="#" class="d-flex align-items-center me-3">
+          <i class="far fa-comment-dots me-2"></i>
+          <p class="mb-0">Comment</p>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="col-lg-12 mt-3">
+  <div class="card border-primary">
+    <div class="card-body mb-4">
+      <div class="d-flex flex-start w-100">
+        <a href="profile.html"> <img class="rounded-circle me-3"
+          src="images/profile-picture.jpg" alt="profile-image" width="80"
+          height="80" /> 
+        <div>
+          <h5 class="fw-bold mb-1">Pumpkin Munchkin</h5></a>
+          <p class="text-muted small mb-0">Last updated 2 days ago</p>
+        </div>
+      </div>
+      <p class="mt-3 mb-4 pb-2">I was carved only 3 days ago, but starting to get a little dry.. Anyone have any pumpkinlotion?</p>
+
+      <div class="small d-flex justify-content-start">
+        <a href="#" class="d-flex align-items-center me-3">
+          <i class="far fa-thumbs-up me-2"></i>
+          <p class="mb-0">Like</p>
+        </a>
+        <a href="#" class="d-flex align-items-center me-3">
+          <i class="far fa-comment-dots me-2"></i>
+          <p class="mb-0">Comment</p>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="col-lg-12 mt-3">
+  <div class="card border-primary">
+    <div class="card-body mb-4">
+      <div class="d-flex flex-start w-100">
+        <a href="profile.html"> <img class="rounded-circle me-3"
+          src="images/profiles/Van.png" alt="profile-image" width="80"
+          height="80" /> 
+        <div>
+          <h5 class="fw-bold mb-1">Van Gogh</h5></a>
+          <p class="text-muted small mb-0">Last updated 3 days ago</p>
+        </div>
+      </div>
+      <p class="mt-3 mb-4 pb-2">Someone carved off my ear!!</p>
+
+      <div class="small d-flex justify-content-start">
+        <a href="#" class="d-flex align-items-center me-3">
+          <i class="far fa-thumbs-up me-2"></i>
+          <p class="mb-0">Like</p>
+        </a>
+        <a href="#" class="d-flex align-items-center me-3">
+          <i class="far fa-comment-dots me-2"></i>
+          <p class="mb-0">Comment</p>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="col-lg-12 mt-3">
+  <div class="card border-primary">
+    <div class="card-body mb-4">
+      <div class="d-flex flex-start w-100">
+        <a href="profile.html"> <img class="rounded-circle me-3"
+          src="images/profiles/lisa (1).jpg" alt="profile-image" width="80"
+          height="80" /> 
+        <div>
+          <h5 class="fw-bold mb-1">Lisa Mona</h5></a>
+          <p class="text-muted small mb-0">Last updated 4 days ago</p>
+        </div>
+      </div>
+      <p class="mt-3 mb-4 pb-2">Tomorrow is my birthday! Hip Hip Array!!  Hee Hee</p>
+
+      <div class="small d-flex justify-content-start">
+        <a href="#" class="d-flex align-items-center me-3">
+          <i class="far fa-thumbs-up me-2"></i>
+          <p class="mb-0">Like</p>
+        </a>
+        <a href="#" class="d-flex align-items-center me-3">
+          <i class="far fa-comment-dots me-2"></i>
+          <p class="mb-0">Comment</p>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="col-lg-12 mt-3">
+  <div class="card border-primary">
+    <div class="card-body mb-4">
+      <div class="d-flex flex-start w-100">
+        <a href="profile.html"> <img class="rounded-circle me-3"
+          src="images/profile-picture.jpg" alt="profile-image" width="80"
+          height="80" /> 
+        <div>
+          <h5 class="fw-bold mb-1">Pumpkin Munchkin</h5></a>
+          <p class="text-muted small mb-0">Last updated 1 week ago</p>
+        </div>
+      </div>
+
+      <p class="mt-3 mb-4 pb-2">Please visit my profile! I added some new images, and i have gotten many new friends! Welcome!</p>
+
+      <div class="small d-flex justify-content-start">
+        <a href="#" class="d-flex align-items-center me-3">
+          <i class="far fa-thumbs-up me-2"></i>
+          <p class="mb-0">Like</p>
+        </a>
+        <a href="#" class="d-flex align-items-center me-3">
+          <i class="far fa-comment-dots me-2"></i>
+          <p class="mb-0">Comment</p>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
       </main>
       <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
         <p class="col-md-4 mb-0 text-muted">© 2022 MyFriends, Inc</p>
