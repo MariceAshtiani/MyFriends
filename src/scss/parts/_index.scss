@@ -1,0 +1,25 @@
+.welcome-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.myfriends-logo {
+    max-width: 300px;
+    width: 90%;
+}
+
+.welcome-card {
+    margin: 5%;
+    width: 90%;
+    border: solid $indigo;
+    border-radius: 20px;
+}
+
+@media (max-width: 600px) {
+    .welcome-content{
+        display: block;
+        text-align: center;
+    }
+}
