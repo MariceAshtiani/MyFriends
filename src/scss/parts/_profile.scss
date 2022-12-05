@@ -1,0 +1,74 @@
+
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+.header-image {
+    max-width: map-get($container-max-widths, lg);
+    width:100%;
+    margin-top: 10px;
+    position: relative;
+}
+
+
+.profile-picture {
+    max-width: map-get($container-max-widths, xxsm);
+    width: 100%;
+    border: solid $border-color;
+    position: relative;
+    top: -60px;
+    right: -50%;
+    transform: translateX(-50%);
+}
+
+.card {
+    
+    max-width: map-get($container-max-widths, md);
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.profile-elements {
+    margin: 0 auto;
+}
+
+.profiles img{
+    max-width: map-get($container-max-widths, xxxsm);
+    width: 100%;
+    border: solid $border-color;
+    border-radius: $border-radius-pill;
+    margin: 10px;
+}
+
+.profiles {
+    margin: 0 auto;
+}
+
+.profile-album{
+    margin: 0 auto;
+}
+
+.profile-album img{
+    max-width: map-get($container-max-widths, xxxsm);
+    width: 100%;
+    border: solid $border-color;
+    margin: 10px;
+}
+
+.post-meme img{
+    max-width: map-get($container-max-widths, md);
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+
+.profile-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.icons a{
+    text-decoration: none;
+}

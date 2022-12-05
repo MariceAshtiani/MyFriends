@@ -1,0 +1,18 @@
+body {
+    min-height: 100vh;
+    font-family: $font-family-sans-serif;
+}
+
+header {
+    width: 100%;
+}
+
+.p-3 {
+    background-color: $primary;
+}
+
+footer {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
