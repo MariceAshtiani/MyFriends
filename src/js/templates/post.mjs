@@ -17,5 +17,4 @@ export function renderPostTemplate(postData, parent) {
 
 export function renderPostTemplates(postDataList, parent) {
     parent.append(...postDataList.map(postTemplateB))
-
 }
