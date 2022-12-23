@@ -16,8 +16,9 @@ if (path === '/profile/login/' || path === '/profile/login/index.html') {
 
 async function testTemplate() {
     const posts = await postMethods.getPosts();
+    const post = posts.pop()
     const container = document.querySelector("#post");
-    templates.renderPostTemplates(posts, container);
+    templates.renderPostTemplate(post, container);
 }
 
-testTemplate();
+testTemplate()
