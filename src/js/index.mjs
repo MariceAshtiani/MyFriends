@@ -8,9 +8,9 @@ import * as postMethods from "./api/posts/index.mjs"
 
 const path = location.pathname;
 
-if (path === '/profile/login/') {
+if (path === '/profile/login/' || path === '/profile/login/index.html') {
     setLoginFormListener()
-} else if (path === '/profile/register/') {
+} else if (path === '/profile/register/' || '/profile/register/index.html') {
     setRegisterFormListener()
 }
 
