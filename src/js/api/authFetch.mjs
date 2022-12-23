@@ -2,19 +2,23 @@ import { load } from "../storage/index.mjs";
 
 /*Returns correct header*/
 
-export function headers() {
-    const token = load("token");
+export default function headers(hasBody = false) {
+    const headers = {};
 
-    return {
-        "Content-TYpe": "application/json",
-        "Authorization": `Bearer ${token}`
+    if (localStorage.token) {
+        headers["Authorization"] = `Bearer ${localStorage.token}`;
     }
+
+    if (Boolean(hasBody)) {
+        headers["Content-Type"] = `application/json`;
+    }
+
+    return headers; 
 }
 
-export async function authFetch(url, options = {}) {
-    return fetch(url, {
-        ...options,
-        headers: headers()
+/*export async function authFetch(url, data) {
+    return await fetch(url, {
+        body: JSON.stringify(data),
+        headers: headers(data)
     })
-
-}
+}*/

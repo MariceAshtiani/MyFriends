@@ -1,7 +1,10 @@
+import * as constants from "./api/constants.mjs";
+
 import { setRegisterFormListener } from "./handlers/register.mjs";
 import { setLoginFormListener } from "./handlers/login.mjs";
 
-import * as post from "./api/posts/index.mjs";
+import * as templates from "./templates/index.mjs"
+import * as postMethods from "./api/posts/index.mjs"
 
 const path = location.pathname;
 
@@ -11,8 +14,10 @@ if (path === '/profile/login/') {
     setRegisterFormListener()
 }
 
-post.createPost()
-post.updatePost()
-post.removePost()
-post.getPost()
-post.getPosts()
+/*async function testTemplate() {
+    const posts = await postMethods.getPosts();
+    const container = document.querySelector("#post");
+    templates.renderPostTemplates(posts, container);
+}
+
+testTemplate();*/
