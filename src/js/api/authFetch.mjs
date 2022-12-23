@@ -4,9 +4,11 @@ import { load } from "../storage/index.mjs";
 
 export default function headers(hasBody = false) {
     const headers = {};
+    
 
     if (localStorage.token) {
-        headers["Authorization"] = `Bearer ${localStorage.token}`;
+        let token = load("token");
+        headers["Authorization"] = `Bearer ${token}`;
     }
 
     if (Boolean(hasBody)) {
@@ -16,9 +18,9 @@ export default function headers(hasBody = false) {
     return headers; 
 }
 
-/*export async function authFetch(url, data) {
+export async function authFetch(url, data) {
     return await fetch(url, {
         body: JSON.stringify(data),
         headers: headers(data)
     })
-}*/
+}
