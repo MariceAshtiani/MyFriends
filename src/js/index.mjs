@@ -14,12 +14,6 @@ if (path === '/profile/login/' || path === '/profile/login/index.html') {
     listeners.setCreatePostFormListener()
 } else if (path === '/post/edit/' || '/post/edit/index.html') {
     listeners.setUpdatePostFormListener()
+} else if (path === '/profile/edit' || '/profile/edit/index.html') {
+    listeners.setUpdateProfileFormListener()
 }
-
-async function testTemplate() {
-    const posts = await postMethods.getPosts();
-    const container = document.querySelector("#posts");
-    templates.renderPostTemplates(posts, container);
-}
-
-testTemplate()
