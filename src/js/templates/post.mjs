@@ -7,6 +7,7 @@ export function postTemplateB(postData) {
     post.classList.add("post");
     post.innerText = postData.title;
 
+
     if (postData.media) {
         const img = document.createElement('img');
         img.src = postData.media;

@@ -22,8 +22,13 @@
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="/posts/">Home</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/profile/">Profile</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Profile</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="/profile/">View Profile</a></li>
+                <li><a class="dropdown-item" href="/profile/edit/">Edit Profile</a></li>
+                <li><a class="dropdown-item" href="#">Log out</a></li>
+              </ul>
             </li>
           </ul>
           <form role="search">
@@ -37,7 +42,20 @@
       <main class="flex-grow-1">
         <div class="container-fluid">
           <div class="row justify-content-center">
-            <div class="col-12 col-md-6" id="posts">
+            
+            <a href="../post/create/"><button class="w-30 btn btn-lg btn-primary create-btn |">Create new post</button>
+
+            <div class="col-12 col-md-6" >
+              <div class="card border-primary">
+                <div class="card-body mb-4">
+                  <div class="flex-start w-100"id="posts">
+
+                  </div>
+
+                </div>
+
+              </div>
+              
 
             </div>
           </div>
@@ -59,5 +77,6 @@
       </footer>
     <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="/src/js/index.mjs" type="module"></script>
+    <script src="../src/js/api/posts/read.mjs" type="module"></script>
 </body>
 </html>

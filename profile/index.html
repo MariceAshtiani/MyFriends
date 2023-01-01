@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MyFriends | Posts</title>
+    <title>MyFriends | Profile</title>
     <link rel="stylesheet" href="/dist/css/styles.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
 </head>
@@ -20,10 +20,15 @@
         <div class="collapse navbar-collapse" id="navbarsExample05">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/posts/">Home</a>
+              <a class="nav-link" aria-current="page" href="/posts/">Home</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/profile/">Profile</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Profile</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item active" href="/profile/">View Profile</a></li>
+                <li><a class="dropdown-item" href="/profile/edit/">Edit Profile</a></li>
+                <li><a class="dropdown-item" href="#">Log out</a></li>
+              </ul>
             </li>
           </ul>
           <form role="search">
@@ -34,14 +39,34 @@
     </nav>
   </header>
 
-      <main class="flex-grow-1">
-        <div class="container-fluid">
-          <div class="row justify-content-center">
-            <div class="col-12 col-md-6">
+      <main>
 
+        <div class="flex-grow-1">
+          <div class="container-fluid">
+            <div class="row justify-content-center">
+              <div class="col-12 col-md-6">
+                <div class="profile-info">
+                  <h1 class="text-center">My Profile</h1>
+                  <div class="profileContaier">
+
+                  <div class="profile-content">
+                    <img src="" class="profile-picture rounded-circle border-primary" alt="profile picture">
+                  <div class="card border-primary" style="width: 18rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">Name</h5>
+                      <p class="card-text">Bio</p>
+                    </div>
+                    <div class="card-body profile-buttons">
+                      <button type="button" class="btn btn-primary">Follow</button>
+                      <button type="button" class="btn btn-primary">Friend request</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
+
       </main>
 
       <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
@@ -59,5 +84,6 @@
       </footer>
     <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="/src/js/index.mjs" type="module"></script>
+    <script src="../src/js/api/profiles/read.mjs" type="module"></script>
 </body>
 </html>
