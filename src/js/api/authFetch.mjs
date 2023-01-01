@@ -20,7 +20,7 @@ export default function headers(hasBody = false) {
 
 export async function authFetch(url, data) {
     return await fetch(url, {
-        body: JSON.stringify(data),
-        headers: headers(data)
+        ...data,
+        headers: headers(true)
     })
 }

@@ -1,4 +1,5 @@
 import { createPost } from "../api/posts/index.mjs";
+import { convertTags } from "./tags.mjs";
 
 export function setCreatePostFormListener() {
     const form = document.querySelector("#createPost");
@@ -10,6 +11,8 @@ export function setCreatePostFormListener() {
         const form = event.target;
         const formData = new FormData(form);
         const post = Object.fromEntries(formData.entries())
+        const postTags = convertTags(formData.tags)
+        formData.tags = postTags;
         const action = form.action;
         const method = form.method;
     
