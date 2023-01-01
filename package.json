@@ -5,7 +5,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "sass src/scss:dist/css",
-    "watch": "sass --watch src/scss:dist/css & live-server"
+    "watch": "sass --watch src/scss:dist/css & live-server",
+    "start": "npm run build && live server"
   },
   "repository": {
     "type": "git",
@@ -27,7 +28,7 @@
     "sass": "^1.55.0"
   },
   "dependencies": {
-    "bootstrap": "^5.2.2",
+    "bootstrap": "^5.2.3",
     "bootstrap-icons": "^1.9.1"
   }
 }
