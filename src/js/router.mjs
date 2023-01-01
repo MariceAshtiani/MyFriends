@@ -1,4 +1,6 @@
-import * as listeners from "./handlers/index.mjs"
+import * as templates from "./templates/index.mjs";
+import * as listeners from "./handlers/index.mjs";
+import * as posts from "./api/posts/index.mjs";
 
 export default function router() {
 
@@ -19,6 +21,14 @@ switch (path) {
         break;
     case '/profile/edit/' || '/profile/edit/index.html':
         listeners.setUpdateProfileFormListener()
+        break;
+    case "/posts/":
+    case "/posts/index.html":
+        (async() => {
+            const getAllPosts = await posts.getPosts();
+            const postsContainer = document.querySelector("#posts")
+            templates.renderPostTemplates(getAllPosts, postsContainer)
+        })()
         break;
 }
 }
