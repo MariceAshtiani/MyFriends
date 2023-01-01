@@ -1,4 +1,5 @@
 import { getPost, updatePost } from "../api/posts/index.mjs";
+import { convertTags } from "./tags.mjs";
 
 export async function setUpdatePostFormListener() {
     const form = document.querySelector("#editPost");
@@ -28,6 +29,8 @@ export async function setUpdatePostFormListener() {
         const form = event.target;
         const formData = new FormData(form);
         const post = Object.fromEntries(formData.entries())
+        const postTags = convertTags(formData.tags)
+        formData.tags = postTags;
         post.id = id;
         const action = form.action;
         const method = form.method;
