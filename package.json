@@ -1,12 +1,12 @@
 {
   "name": "css-frameworks-ca",
   "version": "0.0.1",
-  "description": "My Course Assignment for CSS Frameworks",
+  "description": "My Course Assignment for CSS Frameworks and JS2",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "sass src/scss:dist/css",
     "watch": "sass --watch src/scss:dist/css & live-server",
-    "start": "npm run build && live server"
+    "start": "npm run build && live-server"
   },
   "repository": {
     "type": "git",
@@ -25,10 +25,11 @@
   "homepage": "https://github.com/MariceAshtiani/css-frameworks-CA#readme",
   "devDependencies": {
     "live-server": "^1.2.2",
-    "sass": "^1.55.0"
+    "sass": "^1.57.1"
   },
   "dependencies": {
     "bootstrap": "^5.2.3",
     "bootstrap-icons": "^1.9.1"
-  }
+  },
+  "main": "index.js"
 }
