@@ -1,16 +1,15 @@
 import * as posts from "../api/posts/index";
 
-export function setRemovePostListener(id) {
-    const removeButton = document.querySelector("#removeButton");
+export async function setRemovePostListener(id) {
+    try {
+        const removeButton = document.querySelector("#removeButton");
 
-    removeButton.addEventListener("click", async () => {
-        const response = await posts.removePost(id);
-        console.log(response);
-
-        // check if removing of post was successful
-
-        if (200 <= response < 300){
-            checkIfDeleted();
-        }
-    });
+        removeButton.addEventListener("click", async ({ target }) => {
+            const response = await posts.removePost(target.dataset.id);
+            console.log(response);
+        })
+    } catch (error) {
+        showError("Something went wrong")
+        console.warn(error);
+    }
 }

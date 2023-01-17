@@ -29,8 +29,7 @@ export async function setUpdatePostFormListener() {
         const form = event.target;
         const formData = new FormData(form);
         const post = Object.fromEntries(formData.entries())
-        const postTags = convertTags(formData.tags)
-        formData.tags = postTags;
+        post.tags = convertTags(post.tags)
         post.id = id;
         const action = form.action;
         const method = form.method;

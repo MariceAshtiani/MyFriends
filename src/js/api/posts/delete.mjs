@@ -11,9 +11,23 @@ export async function removePost(id) {
     }
     const removePostURL = `${API_SOCIAL_URL}${action}/${id}`;
 
+
+    const token = localStorage.token;
+
+    if (!token) {
+        throw new Error("You must be logged in to delete a post")
+    }
+
+
     const response = await authFetch(removePostURL, {
         method
     })
 
-    return await response.json();
+    if (response.ok) {
+        return await response.json();
+    }
+
+    throw new Error("Could not delete this item");
+
+//    return await response.json();
 }
