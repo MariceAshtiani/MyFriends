@@ -9,25 +9,30 @@ const path = location.pathname;
 
 switch (path) {
     case '/profile/login/' || '/profile/login/index.html':
-        listeners.setLoginFormListener()
+        listeners.setLoginFormListener();
         break;
     case '/profile/register/' || '/profile/register/index.html':
-        listeners.setRegisterFormListener()
+        listeners.setRegisterFormListener();
         break;
     case '/post/create/' || '/post/create/index.html':
-        listeners.setCreatePostFormListener()
+        listeners.setCreatePostFormListener();
+        listeners.setLogoutListener(); 
         break;
     case '/post/edit/' || '/post/edit/index.html':
-        listeners.setUpdatePostFormListener()
+        listeners.setUpdatePostFormListener();
+        listeners.setRemovePostListener();
+        listeners.setLogoutListener(); 
         break;
     case '/profile/edit/' || '/profile/edit/index.html':
-        listeners.setUpdateProfileFormListener()
+        listeners.setUpdateProfileFormListener();
+        listeners.setLogoutListener(); 
         break;
-    case '/profile/edit/' || '/profile/edit/index.hmtl':
-        listeners.setRemovePostListener()
+    case '/profile/':
+        listeners.setLogoutListener();
         break;
     case "/posts/index.html":
         templates.displayPosts();
+        listeners.setLogoutListener(); 
         // (async() => {
         //     const getAllPosts = await posts.getPosts();
         //     const postsContainer = document.querySelector("#posts")
@@ -36,6 +41,8 @@ switch (path) {
         break;
     case "/post/index.html":
         templates.viewSinglePost();
+        listeners.setLogoutListener(); 
         break;
+    
 }
 }
