@@ -7,7 +7,7 @@ const method = "delete";
 
 export async function removePost(id) {
     if (!id) {
-        throw new error("Post-ID required to delete post");
+        throw new Error("Post-ID required to delete post");
     }
     const removePostURL = `${API_SOCIAL_URL}${action}/${id}`;
 
@@ -24,8 +24,15 @@ export async function removePost(id) {
     })
 
     if (response.ok) {
+        alert("Post deleted!")
+        window.location.replace("/posts/")
         return await response.json();
+    } else {
+        alert("You do not have permission to delete or edit this post");
     }
+
+
+    console.log(response);
 
     throw new Error("Could not delete this item");
 
