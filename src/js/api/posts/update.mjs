@@ -22,6 +22,11 @@ export async function updatePost(postData) {
    }
 
     console.log(response);
+
+    if (response.ok) {
+        alert("Post updated");
+    }
+
     return await response.json();
 
     
