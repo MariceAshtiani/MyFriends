@@ -13,5 +13,12 @@ export async function createPost(postData) {
         body: JSON.stringify(postData)
     })
 
+    if (response.ok) {
+        window.location.replace("/posts/")
+    }
+
+    
     return await response.json();
+
+
 }
