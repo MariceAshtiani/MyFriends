@@ -1,6 +1,6 @@
 import { API_SOCIAL_URL } from "../constants.mjs";
-
 import { authFetch } from "../authFetch.mjs";
+import displayError from "../ui/displayError.mjs";
 
 const action = "/posts";
 const method = "put";
@@ -16,5 +16,13 @@ export async function updatePost(postData) {
         body: JSON.stringify(postData)
     })
 
+   if (response.ok===false) {
+    alert("You do not have permission to edit this post");
+
+   }
+
+    console.log(response);
     return await response.json();
+
+    
 }
