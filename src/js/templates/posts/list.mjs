@@ -1,18 +1,23 @@
 import { getPosts } from "../../api/posts/index.mjs";
 import displayError from "../../api/ui/displayError.mjs";
+import { sortPostsOldestToNewest } from "../../handlers/sort.mjs";
 
 export async function displayPosts() {
     try {
         const posts = await getPosts();
         renderPosts("#posts", posts);
+
+
+
     } catch (error) {
         console.log(error);
         displayError("#posts", "Failed to fetch posts");
     }
 }
 
-function renderPosts(container, posts) {
+export function renderPosts(container, posts) {
     const parent = document.querySelector(container);
+
     parent.innerHTML = "";
 
     posts.forEach( (post) => {
