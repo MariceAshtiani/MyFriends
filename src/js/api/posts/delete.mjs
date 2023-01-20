@@ -26,6 +26,7 @@ export async function removePost(id) {
     })
 
     if (response.ok) {
+        confirm("Are you sure you want to delete this post?")
         alert("Post deleted!")
         window.location.replace("/posts/")
         return await response.json();
