@@ -1,10 +1,11 @@
 import * as posts from "../api/posts/index.mjs";
 import { removePost } from "../api/posts/delete.mjs";
 import { getParam } from "../api/utils/tools.mjs";
+import displayError from "../api/ui/displayError.mjs";
 
 export async function setRemovePostListener(id) {
 
-    //const getId = getParam("id");
+   // const id = getParam("id");
 
     try {
         const removeButton = document.querySelector("#removeButton");
@@ -14,9 +15,7 @@ export async function setRemovePostListener(id) {
             console.log(response);
         })
     } catch (error) {
-        showError("Something went wrong")
         console.warn(error);
     }
 
-    removePost(id);
 }

@@ -1,11 +1,13 @@
 import { API_SOCIAL_URL } from "../constants.mjs";
-
+import { getParam } from "../utils/tools.mjs";
 import { authFetch } from "../authFetch.mjs";
 
 const action = "/posts";
 const method = "delete";
 
 export async function removePost(id) {
+
+
     if (!id) {
         throw new Error("Post-ID required to delete post");
     }
@@ -28,7 +30,7 @@ export async function removePost(id) {
         window.location.replace("/posts/")
         return await response.json();
     } else {
-        alert("You do not have permission to delete or edit this post");
+        alert("You do not have permission to delete this post");
     }
 
 
