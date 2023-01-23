@@ -35,7 +35,7 @@ switch (path) {
     case '/profile/':
         listeners.setLogoutListener();
         break;
-    case "/posts/index.html":
+    case "/posts/":
         templates.displayPosts();
         listeners.setLogoutListener(); 
         // (async() => {
@@ -44,7 +44,7 @@ switch (path) {
         //     templates.renderPostTemplates(getAllPosts, postsContainer)
         // })()
         break;
-    case "/post/index.html":
+    case "/post/":
         templates.viewSinglePost();
         listeners.setLogoutListener(); 
         break;
