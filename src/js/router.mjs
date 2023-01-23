@@ -8,22 +8,27 @@ export default function router() {
 const path = location.pathname;
 
 switch (path) {
-    case '/profile/login/' || '/profile/login/index.html':
+    case '/profile/login/':
+    case'/profile/login/index.html':
         listeners.setLoginFormListener();
         break;
-    case '/profile/register/' || '/profile/register/index.html':
+    case '/profile/register/':
+    case '/profile/register/index.html':
         listeners.setRegisterFormListener();
         break;
-    case '/post/create/' || '/post/create/index.html':
+    case '/post/create/':
+    case '/post/create/index.html':
         listeners.setCreatePostFormListener();
         listeners.setLogoutListener(); 
         break;
-    case '/post/edit/' || '/post/edit/index.html':
+    case '/post/edit/':
+    case '/post/edit/index.html':
         listeners.setUpdatePostFormListener();
         listeners.setRemovePostListener();
         listeners.setLogoutListener(); 
         break;
-    case '/profile/edit/' || '/profile/edit/index.html':
+    case '/profile/edit/':
+    case '/profile/edit/index.html':
         listeners.setUpdateProfileFormListener();
         listeners.setLogoutListener(); 
         break;
