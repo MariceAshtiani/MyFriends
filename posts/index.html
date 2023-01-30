@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MyFriends | Home</title>
+    <title>MyFriends | Posts</title>
     <link rel="stylesheet" href="/dist/css/styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
 </head>
 <body>
   <header class="p-3 ">
     <nav class="navbar navbar-expand-lg navbar-dark" aria-label="Fifth navbar example">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">MyFriends</a>
+        <a class="navbar-brand" href="/posts/">MyFriends</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -19,13 +20,15 @@
         <div class="collapse navbar-collapse" id="navbarsExample05">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="/posts/">Home</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="profile/login/">Log in</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="profile/register/">Register</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Profile</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="/profile/">View Profile</a></li>
+                <li><a class="dropdown-item" href="/profile/edit/">Edit Profile</a></li>
+                <li><a class="dropdown-item" href="#">Log out</a></li>
+              </ul>
             </li>
           </ul>
           <form role="search">
@@ -35,28 +38,30 @@
       </div>
     </nav>
   </header>
-      <main>
-        <div class="welcome-content">
-            <h1 class="fw-bold display-3">Welcome to</h1>
-            <img src="images/logo.jpg" alt="myfriends logo" class="myfriends-logo">
+
+      <main class="flex-grow-1">
+        <div class="container-fluid">
+          <div class="row justify-content-center">
+            
+            <a href="../post/create/"><button class="w-30 btn btn-lg btn-primary create-btn |">Create new post</button>
+
+            <div class="col-12 col-md-6" >
+              <div class="card border-primary">
+                <div class="card-body mb-4">
+                  <div class="flex-start w-100"id="posts">
+
+                  </div>
+
+                </div>
+
+              </div>
+              
+
+            </div>
+          </div>
         </div>
-        <div class="row align-items-center g-lg-5 py-5 welcome-card">
-        <div class="col-lg-7 text-center text-lg-start">
-          <h2 class="display-5 fw-bold lh-1 mb-3">Sign in to join your friends!</h2>
-          <p class="col-lg-10 fs-4"> On MyFriends you can share your funniest memes with your friends! If you have something on your mind, you can post it to your feed, you can share funny videos, dark-humour memes, your work-assignments, whatever you feel the need to share with your friends.</p>
-          <h3>Stop missing out! Sign in now!</h3>
-        </div>
-        <div class="col-md-10 mx-auto col-lg-5">
-          <a href="/profile/register/">
-          <button class="w-100 btn btn-lg btn-primary" type="submit">Register</button>
-          </a>  
-          <h4 class="text-center"> or </h4>
-          <a href="/profile/login/">
-            <button class="w-100 btn btn-lg btn-primary" type="submit">Log in</button>
-            </a>
-        </div>
-      </div>
-    </main>
+      </main>
+
       <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
         <p class="col-md-4 mb-0 text-muted">© 2022 MyFriends, Inc</p>
     
@@ -71,5 +76,7 @@
         </ul>
       </footer>
     <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/src/js/index.mjs" type="module"></script>
+    <script src="../src/js/api/posts/read.mjs" type="module"></script>
 </body>
 </html>

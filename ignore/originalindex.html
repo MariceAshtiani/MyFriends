@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MyFriends | Home</title>
+    <title>MyFriends | Sign in</title>
     <link rel="stylesheet" href="/dist/css/styles.css">
 </head>
 <body>
@@ -19,13 +19,13 @@
         <div class="collapse navbar-collapse" id="navbarsExample05">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link" aria-current="page" href="feed.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="profile/login/">Log in</a>
+              <a class="nav-link" href="profile.html">Profile</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="profile/register/">Register</a>
+              <a class="nav-link active" href="index.html">Login</a>
             </li>
           </ul>
           <form role="search">
@@ -47,16 +47,26 @@
           <h3>Stop missing out! Sign in now!</h3>
         </div>
         <div class="col-md-10 mx-auto col-lg-5">
-          <a href="/profile/register/">
-          <button class="w-100 btn btn-lg btn-primary" type="submit">Register</button>
-          </a>  
-          <h4 class="text-center"> or </h4>
-          <a href="/profile/login/">
-            <button class="w-100 btn btn-lg btn-primary" type="submit">Log in</button>
-            </a>
+          <form action="/profile.html" method="GET" class="p-4 p-md-5 border rounded-3 bg-light">
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control" id="floatingInput" required placeholder="name@example.com">
+              <label for="floatingInput">Email address</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="password" class="form-control" id="floatingPassword" placeholder="Password" minLength="5" maxLength="25" required>
+              <label for="floatingPassword">Password</label>
+            </div>
+            <div class="checkbox mb-3">
+              <label>
+                <input type="checkbox" value="remember-me"> Remember me
+              </label>
+            </div>
+            <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
+            <hr class="my-4">
+            <small class="text-muted">By signing in, you agree to the terms of use.</small>
+          </form>
         </div>
-      </div>
-    </main>
+      </div></main>
       <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
         <p class="col-md-4 mb-0 text-muted">© 2022 MyFriends, Inc</p>
     
